@@ -1,0 +1,78 @@
+<mat-sidenav-container   autosize style="box-shadow: none;">
+    <div  *ngIf="showFiller">
+      <button class="sidenav-content"type="button" mat-button (click)="sidenav.toggle();showFiller=false">
+        <mat-icon  matBadgeColor="warn">arrow_forward</mat-icon> 
+      </button>
+    </div>
+    <div *ngIf="!showFiller">
+      <button class="sidenav-content" type="button" mat-button (click)="sidenav.toggle();showFiller=true">
+        <mat-icon  matBadgeColor="warn">arrow_back</mat-icon> 
+      </button>
+    </div> 
+     <mat-sidenav #sidenav class="example-sidenav" mode="side" position="end">
+       <div style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 16px;
+        background-color: #be032b;width: 100%;
+        padding: 5px;text-align: center;color: white;">
+         <span >الجمهورية الجزائرية الديمقراطية الشعبية</span><br>
+         <span >وزارة التربيةالوطنية</span>
+       </div>
+       <div class="item">
+        <span >مفتش التعليم الابتدائي  للادارة مقاطعة تقرت سعداوي زين العبدين</span>
+      </div>
+      <div style="display: block; height: 250px;width: 340px; align-self: center;">
+      
+            <img class="image" src="./../assets/605-6057241_dont-spotlight-the-killers-facebook-no-profile-picture.png"/>
+      </div>
+      <button  mat-button class="item" style="text-align: center;">
+       <span >البطاقة الشخصية</span>
+     </button>
+     <button mat-button class="item" style="text-align: center;">
+        تسجيل الخروج
+      </button>
+      <button mat-button class="item" style="text-align: right;"(click)="icon=1">
+         <span style="margin-right: 4px;">صفحة البداية</span> 
+        <mat-icon  matBadgeColor="warn">home</mat-icon>
+          </button>
+             <mat-expansion-panel (opened)="panelOpenState = true"
+             (closed)="panelOpenState = false" position="end" class="item">
+          <mat-expansion-panel-header style="flex-direction: row-reverse;padding-right: -0px">
+          <mat-panel-title>
+            <span style="color: white;
+             font-family: HACEN MAGHREB LT;width: 100%;
+              font-size: 20px;text-align: right;">
+              المراسلات
+            </span> 
+      <span style="color: white;text-align: right;padding-right: 0px;">
+         <mat-icon >email</mat-icon>
+        </span>
+          </mat-panel-title>
+          </mat-expansion-panel-header>
+          <button mat-button class="item" style="text-align: right;">
+            <span style="margin-right: 4px;" >
+              رسالة جديدة
+            </span> 
+             </button>
+             <button mat-button class="item" style="text-align: right;">
+              <span style="margin-right: 4px;" >
+                الوارد
+              </span> 
+               </button><button mat-button class="item" style="text-align: right;">
+                <span style="margin-right: 4px;" >
+                  الصادر
+                </span> 
+                 </button><button mat-button class="item" style="text-align: right;">
+                  <span style="margin-right: 4px;" >
+                    المحفوظ
+                  </span> 
+                   </button>
+                   <button mat-button class="item" style="text-align: right;">
+                    <span style="margin-right: 4px;" >
+                      المحذوف
+                    </span> 
+                     </button>
+          </mat-expansion-panel>
+    </mat-sidenav>
+  <app-nav-bar></app-nav-bar>
+  </mat-sidenav-container>
+
+  
