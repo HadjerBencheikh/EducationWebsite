@@ -1,0 +1,8 @@
+table {
+  width: 95%;
+  flex-direction: row-reverse;
+}
+span {
+  font-family: "HACEN MAGHREB BD";
+  font-size: medium;
+}

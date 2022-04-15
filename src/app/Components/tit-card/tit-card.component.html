@@ -1,0 +1,86 @@
+<div class="content" role="main" style="width: 95%;margin-top: 80px;">
+    <mat-card style="margin: auto;width: 95%; flex-direction: row-reverse;">
+   
+  <button mat-button style="align-content: right;
+  color: #ffffff;padding:3 4px;
+  font-family: HACEN MAGHREB LT;
+  background-color: #dd0031;
+  border-radius: 5%;width: fit-content;margin: 4px;">
+        <span style="margin-right: 4px;" >
+          القائمة الإسمية
+        </span> 
+         </button>  
+       <button mat-icon-button [matMenuTriggerFor]="menu" 
+      aria-label="Example icon-button with a menu"
+      style="align-content: center;
+      color: white;padding:0 2px;
+      font-family: HACEN MAGHREB LT;
+      background-color: #148a05;
+      border-radius: 5%;width: fit-content;margin: 4px;">
+        <mat-icon>keyboard_arrow_down</mat-icon>
+       <span>مؤسسات المتوسط</span>
+       </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item style="flex-direction: column-reverse;align-content: right;font-family: HACEN MAGHREB LT;">
+          <span>مؤسسات الإبتدائي</span>
+         </button>
+        <button mat-menu-item  style="flex-direction: column-reverse;align-content: right;font-family: HACEN MAGHREB LT;">
+          <span>مؤسسات المتوسط</span>
+         </button>
+        <button mat-menu-item style="flex-direction: column-reverse;align-content: right;font-family: HACEN MAGHREB LT;">
+          <span>مؤسسات الثانوي</span>
+        </button>
+        <button mat-menu-item style="flex-direction: column-reverse;align-content: right;font-family: HACEN MAGHREB LT;">
+          <span>مؤسسات خاصة</span>
+           </button>
+      </mat-menu>
+     <span
+       style="font-family:HACEN MAGHREB LT;
+       float: right;
+       font-size: 25px;
+       text-align: right;
+       height: 100%;
+       vertical-align: bottom;">
+       المؤسسات التربوية
+      <mat-icon>room</mat-icon>
+       </span> 
+     </mat-card>
+  </div>
+ <!-- <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="position">
+      <th mat-header-cell *matHeaderCellDef> No. </th>
+      <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+  
+    
+    <ng-container matColumnDef="weight">
+      <th mat-header-cell *matHeaderCellDef> Weight </th>
+      <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="symbol">
+      <th mat-header-cell *matHeaderCellDef> Symbol </th>
+      <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+ --> 
+<div 
+style="width: 95%;
+margin-top: 80px;
+color:#888;
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;">
+  <mat-icon>restore</mat-icon><br>
+  <span > لا تتوفر قوائم حاليا</span>
+</div>  
