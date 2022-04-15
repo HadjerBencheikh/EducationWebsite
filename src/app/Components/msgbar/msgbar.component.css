@@ -1,0 +1,45 @@
+.mat-tab-group {
+  margin-bottom: 48px;
+  margin-top: 48px;
+  font-family: "HACEN MAGHREB LT";
+  flex-direction: column;
+}
+.mat-tab-group.mat-primary .mat-ink-bar {
+  background: #10a803;
+}
+.mat-tab-label {
+  background: #ebeceb;
+  width: 20%;
+  font-family: "HACEN MAGHREB LT" !important;
+  font-size: 20px;
+}
+table {
+  width: 100%;
+}
+.item {
+  font-family: "HACEN MAGHREB LT";
+  font-size: 15px;
+  background-color: white;
+  float: right;
+  width: 200px;
+  padding: 2px;
+  margin: 15px;
+  justify-content: center;
+  text-align: center;
+  color: #dd0031;
+  border: 1px solid #dd0031;
+  border-radius: 5%;
+}
+.item1 {
+  font-family: "HACEN MAGHREB LT";
+  font-size: 15px;
+  background-color: white;
+  text-align: right;
+  flex-direction: row-reverse;
+  color: black;
+  width: fit-content;
+  padding: 2px;
+  margin: 15px;
+  border: 1px solid #000000;
+  border-radius: 5%;
+}

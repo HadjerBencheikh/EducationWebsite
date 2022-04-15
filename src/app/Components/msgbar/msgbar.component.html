@@ -1,0 +1,106 @@
+<div  style="margin: 100px auto;background-color: white; width: 90%;height: 100%; flex-direction: column;">
+    <div style="flex-direction: row-reverse;padding: 6px;">
+      <button mat-button class="item" style="text-align: right;flex-direction: row-reverse;">
+      <span style="margin-right: 4px;" >
+        قائمة المؤسسات
+      </span> 
+        <span>
+          <mat-icon size="14">business</mat-icon>
+         </span>
+       </button>
+       <button mat-button class="item" style="text-align: right;">
+        <span style="margin-right: 4px;" >
+          مؤسستي
+        </span> 
+         <span>
+          <mat-icon size="14">location_city</mat-icon>
+         </span>
+        </button>
+        </div>
+        <br>
+          <mat-tab-group mat-align-tabs="end" selectedIndex="4">
+        <mat-tab label="المحذوف">
+        <div 
+        style="width: 95%;
+        margin-top: 80px;
+        color:#888;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;">
+          <mat-icon>restore</mat-icon><br>
+          <span > لاتوجد رسائل محذوفة</span>
+        </div>
+      </mat-tab>
+      <mat-tab label="المحفوظ" style=" width: auto;">
+        <div 
+        style="width: 95%;
+        margin-top: 80px;
+        color:#888;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;">
+          <mat-icon>restore</mat-icon><br>
+          <span > لاتوجد رسائل محفوظة</span>
+        </div>  
+      </mat-tab>
+      <mat-tab label="الصادر" style=" width: auto;">
+        <div 
+        style="width: 95%;
+        margin-top: 80px;
+        color:#888;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;">
+          <mat-icon>restore</mat-icon><br>
+          <span > لا تتوفر رسائل حاليا</span>
+        </div>  
+      </mat-tab>
+       <mat-tab label="الوارد" matBadge="3" style=" width: auto;">
+        <div 
+        style="width: 95%;
+        margin-top: 80px;
+        color:#888;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;">
+          <mat-icon>restore</mat-icon><br>
+          <span > لا تتوفر رسالة حاليا</span>
+        </div>  
+      </mat-tab>
+    <mat-tab label="رسالة جديدة">
+    <mat-tab-group mat-align-tabs="end"selectedIndex="1">
+      <mat-tab label="الرسائل الجديدة" style=" width: auto;">
+        <div 
+        style="width: 95%;
+        margin-top: 80px;
+        color:#888;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;">
+          <mat-icon>restore</mat-icon><br>
+          <span > لا تتوفر رسائل حاليا</span>
+        </div>  
+      </mat-tab>
+      <mat-tab label="الرسائل الأخيرة" style=" width: auto;">
+        <div 
+        style="width: 95%;
+        margin-top: 80px;
+        color:#888;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;">
+          <mat-icon>restore</mat-icon><br>
+          <span > لا تتوفر رسائل حاليا</span>
+        </div>  
+      </mat-tab>
+    </mat-tab-group>
+        </mat-tab>
+      </mat-tab-group>
+    
+    </div>
