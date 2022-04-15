@@ -1,0 +1,40 @@
+<div class="toolbar" role="banner">
+ <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item style="flex-direction: column-reverse;align-content: right;">
+      <span>المراسلات</span>
+    <mat-icon>email</mat-icon>
+      </button>
+    <button mat-menu-item  style="flex-direction: column-reverse;align-content: right;">
+      <span>البطاقة الشخصية</span>
+     <mat-icon>user</mat-icon>
+     </button>
+    <button mat-menu-item style="flex-direction: column-reverse;align-content: right;color: #dd0031;">
+      <span>تسجيل الخروج</span>
+      <mat-icon style="color: #dd0031;">logout</mat-icon>
+    </button>
+  </mat-menu>
+  <button mat-icon-button>
+    <mat-icon>notifications_none</mat-icon>
+  </button>
+     <button mat-icon-button matBadge="{{num}}" MatBadgePosition="before" matBadgeColor="warn"(click)="icon=2"> 
+      <mat-icon  fill="none">email</mat-icon>
+    </button>
+    <button mat-icon-button style="flex-direction:row;width: fit-content;border-radius: 0%;justify-content: center;" (click)="icon=1"> 
+      <span style="vertical-align:top">الواجهة</span> 
+      <mat-icon>home</mat-icon>
+    </button>
+      
+    <div class="spacer"></div>
+      <span>مديرية التربية لولاية تقرت</span>
+     <img
+      width="40"
+      alt="Angular Logo"
+      src="./../assets/PhotoRoom-20220309_181646.png"
+    />
+  </div>
+<div *ngIf="icon===1"><app-tit-card></app-tit-card></div>
+  <div *ngIf="icon===2"><app-msgbar></app-msgbar></div>
+  
